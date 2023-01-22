@@ -1,1 +1,1 @@
-# OMNeT-
+# OMNeT
