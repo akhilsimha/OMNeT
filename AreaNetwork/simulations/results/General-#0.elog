@@ -1,0 +1,238 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid General-0-20230122-19:56:36-3336 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t areanetwork.simulations.ComputerNetwork n ComputerNetwork cm 1
+MS id 1 d ""
+MC id 2 c Computer t areanetwork.Computer pid 1 n computer_A
+GC m 2 g 0 n port$i o 0
+GC m 2 g 1 n port$o o 1
+MS id 2 d ""
+MC id 3 c Computer t areanetwork.Computer pid 1 n computer_B
+GC m 3 g 0 n port$i o 0
+GC m 3 g 1 n port$o o 1
+MS id 3 d ""
+CC sm 2 sg 1 dm 3 dg 0
+CC sm 3 sg 1 dm 2 dg 0
+MB sm 1 tm 2 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n "" pe -1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n "" pe 0
+SH sm 2 sg 1
+ES t 0
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n "" pe 0 cid 1
+ME
+MB sm 1 tm 3 m initialize(0)
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n "" pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n "" pe 0
+SH sm 3 sg 1
+ES t 0
+CL id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n "" pe 0 cid 2
+ME
+
+E # 1 t 0 m 3 ce 0 msg 0
+CM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "" pe -1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "" pe 1
+SH sm 3 sg 1
+ES t 37.440675115213
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "" pe 1 cid 3
+- INFO:Message Received
+
+E # 2 t 0 m 2 ce 0 msg 1
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n "" pe -1
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n "" pe 2
+SH sm 2 sg 1
+ES t 39.642230819445
+CL id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n "" pe 2 cid 4
+- INFO:Message Received
+
+E # 3 t 37.440675115213 m 2 ce 1 msg 2
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "" pe -1
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "" pe 3
+SH sm 2 sg 1
+ES t 83.200143363793
+CL id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "" pe 3 cid 5
+- INFO:Message Received
+
+E # 4 t 39.642230819445 m 3 ce 2 msg 3
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "" pe -1
+BS id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "" pe 4
+SH sm 3 sg 1
+ES t 91.855518023949
+CL id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "" pe 4 cid 6
+- INFO:Message Received
+
+E # 5 t 83.200143363793 m 3 ce 3 msg 4
+CM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n "" pe -1
+BS id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n "" pe 5
+SH sm 3 sg 1
+ES t 123.33831188269
+CL id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n "" pe 5 cid 7
+- INFO:Message Received
+
+E # 6 t 91.855518023949 m 2 ce 4 msg 5
+CM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "" pe -1
+BS id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "" pe 6
+SH sm 2 sg 1
+ES t 144.752799016423
+CL id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "" pe 6 cid 8
+- INFO:Message Received
+
+E # 7 t 123.33831188269 m 2 ce 5 msg 6
+CM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "" pe -1
+BS id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "" pe 7
+SH sm 2 sg 1
+ES t 160.582470751834
+CL id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "" pe 7 cid 9
+- INFO:Message Received
+
+E # 8 t 144.752799016423 m 3 ce 6 msg 7
+CM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n "" pe -1
+BS id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n "" pe 8
+SH sm 3 sg 1
+ES t 197.115385879296
+CL id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n "" pe 8 cid 10
+- INFO:Message Received
+
+E # 9 t 160.582470751834 m 3 ce 7 msg 8
+CM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "" pe -1
+BS id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "" pe 9
+SH sm 3 sg 1
+ES t 191.765210591257
+CL id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "" pe 9 cid 11
+- INFO:Message Received
+
+E # 10 t 191.765210591257 m 2 ce 9 msg 10
+CM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "" pe -1
+BS id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "" pe 10
+SH sm 2 sg 1
+ES t 232.94339541113
+CL id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "" pe 10 cid 12
+- INFO:Message Received
+
+E # 11 t 197.115385879296 m 2 ce 8 msg 9
+CM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n "" pe -1
+BS id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n "" pe 11
+SH sm 2 sg 1
+ES t 239.410091633908
+CL id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n "" pe 11 cid 13
+- INFO:Message Received
+
+E # 12 t 232.94339541113 m 3 ce 10 msg 11
+CM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n "" pe -1
+BS id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n "" pe 12
+SH sm 3 sg 1
+ES t 262.162480822299
+CL id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n "" pe 12 cid 14
+- INFO:Message Received
+
+E # 13 t 239.410091633908 m 3 ce 11 msg 12
+CM id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n "" pe -1
+BS id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n "" pe 13
+SH sm 3 sg 1
+ES t 271.289452132768
+CL id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n "" pe 13 cid 15
+- INFO:Message Received
+
+E # 14 t 262.162480822299 m 2 ce 12 msg 13
+CM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n "" pe -1
+BS id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n "" pe 14
+SH sm 2 sg 1
+ES t 287.039211085067
+CL id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n "" pe 14 cid 16
+- INFO:Message Received
+
+E # 15 t 271.289452132768 m 2 ce 13 msg 14
+CM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n "" pe -1
+BS id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n "" pe 15
+SH sm 2 sg 1
+ES t 325.878102220594
+CL id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n "" pe 15 cid 17
+- INFO:Message Received
+
+E # 16 t 287.039211085067 m 3 ce 14 msg 15
+CM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n "" pe -1
+BS id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n "" pe 16
+SH sm 3 sg 1
+ES t 299.874859871344
+CL id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n "" pe 16 cid 18
+- INFO:Message Received
+
+E # 17 t 299.874859871344 m 2 ce 16 msg 17
+CM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n "" pe -1
+BS id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n "" pe 17
+SH sm 2 sg 1
+ES t 358.05799807422
+CL id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n "" pe 17 cid 19
+- INFO:Message Received
+
+E # 18 t 325.878102220594 m 3 ce 15 msg 16
+CM id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n "" pe -1
+BS id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n "" pe 18
+SH sm 3 sg 1
+ES t 349.510916946455
+CL id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n "" pe 18 cid 20
+- INFO:Message Received
+
+E # 19 t 349.510916946455 m 2 ce 18 msg 19
+CM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n "" pe -1
+BS id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n "" pe 19
+SH sm 2 sg 1
+ES t 378.68299301248
+CL id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n "" pe 19 cid 21
+- INFO:Message Received
+
+E # 20 t 358.05799807422 m 3 ce 17 msg 18
+CM id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n "" pe -1
+BS id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n "" pe 20
+SH sm 3 sg 1
+ES t 391.941253656988
+CL id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n "" pe 20 cid 22
+- INFO:Message Received
+
+E # 21 t 378.68299301248 m 3 ce 19 msg 20
+CM id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n "" pe -1
+BS id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n "" pe 21
+SH sm 3 sg 1
+ES t 428.269244683906
+CL id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n "" pe 21 cid 23
+- INFO:Message Received
+
+E # 22 t 391.941253656988 m 2 ce 20 msg 21
+CM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n "" pe -1
+BS id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n "" pe 22
+SH sm 2 sg 1
+ES t 442.549689980225
+CL id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n "" pe 22 cid 24
+- INFO:Message Received
+
+E # 23 t 428.269244683906 m 2 ce 21 msg 22
+CM id 24 tid 24 eid 24 etid 24 c omnetpp::cMessage n "" pe -1
+BS id 24 tid 24 eid 24 etid 24 c omnetpp::cMessage n "" pe 23
+SH sm 2 sg 1
+ES t 464.713990760501
+CL id 24 tid 24 eid 24 etid 24 c omnetpp::cMessage n "" pe 23 cid 25
+- INFO:Message Received
+
+E # 24 t 442.549689980225 m 3 ce 22 msg 23
+CM id 25 tid 25 eid 25 etid 25 c omnetpp::cMessage n "" pe -1
+BS id 25 tid 25 eid 25 etid 25 c omnetpp::cMessage n "" pe 24
+SH sm 3 sg 1
+ES t 476.548548550346
+CL id 25 tid 25 eid 25 etid 25 c omnetpp::cMessage n "" pe 24 cid 26
+- INFO:Message Received
+
+E # 25 t 464.713990760501 m 3 ce 23 msg 24
+CM id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n "" pe -1
+BS id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n "" pe 25
+SH sm 3 sg 1
+ES t 503.116218948271
+CL id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n "" pe 25 cid 27
+- INFO:Message Received
+
+E # 26 t 476.548548550346 m 2 ce 24 msg 25
+CM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n "" pe -1
+BS id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n "" pe 26
+SH sm 2 sg 1
+ES t 506.187788208482
+CL id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n "" pe 26 cid 28
+- INFO:Message Received
+SE e 0 c 38 m "Simulation time limit reached -- at t=500s, event #27"

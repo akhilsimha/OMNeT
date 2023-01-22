@@ -1,0 +1,3 @@
+package areanetwork;
+
+@license(LGPL);
